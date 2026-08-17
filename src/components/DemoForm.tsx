@@ -37,10 +37,7 @@ export function DemoForm() {
   return (
     <div>
       <h3 className="mb-2 font-semibold text-cyan-300">react-hook-form + zod</h3>
-      <form
-        className="space-y-2"
-        onSubmit={handleSubmit((values) => setSubmitted(values))}
-      >
+      <form className="space-y-2" onSubmit={handleSubmit((values) => setSubmitted(values))}>
         <div>
           <input
             className="rounded border border-slate-600 bg-slate-800 px-2 py-1"
@@ -57,17 +54,12 @@ export function DemoForm() {
           />
           {errors.email && <p className="text-xs text-rose-400">{errors.email.message}</p>}
         </div>
-        <button
-          type="submit"
-          className="rounded bg-cyan-600 px-3 py-1 text-sm hover:bg-cyan-500"
-        >
+        <button type="submit" className="rounded bg-cyan-600 px-3 py-1 text-sm hover:bg-cyan-500">
           提交
         </button>
       </form>
       {submitted && (
-        <pre className="mt-2 text-xs text-emerald-300">
-          {JSON.stringify(submitted, null, 2)}
-        </pre>
+        <pre className="mt-2 text-xs text-emerald-300">{JSON.stringify(submitted, null, 2)}</pre>
       )}
     </div>
   )

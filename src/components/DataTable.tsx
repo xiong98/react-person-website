@@ -44,9 +44,7 @@ export function DataTable({ data }: { data: Todo[] }) {
   })
 
   const template = gridTemplate(
-    table
-      .getHeaderGroups()[0]
-      .headers.map((header) => header.getSize()),
+    table.getHeaderGroups()[0].headers.map((header) => header.getSize()),
   )
 
   return (
