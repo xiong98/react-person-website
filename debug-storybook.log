@@ -1,0 +1,15 @@
+[13:28:16.294] [INFO] storybook v10.5.8
+[13:28:17.904] [ERROR] [38;2;241;97;97mSB_CORE-COMMON_0003 (CouldNotEvaluateFrameworkError): Could not evaluate the 'storybook/react-vite' package from the 'framework' field of Storybook config.
+
+Are you sure it's a valid package and is installed?
+
+More info: 
+[39m
+    at validateFrameworkName (file:///D:/E%E7%9B%98%E8%BD%AC%E7%A7%BB/.0000%E6%96%B0%E5%89%AA%E8%BE%91/%E5%89%AA%E8%BE%91%E5%B7%A5%E7%A8%8B/%E5%9C%A8%E5%AE%B6%E5%B7%A5%E4%BD%9C%E5%AD%A6%E4%B9%A0/react19%E5%86%85%E5%AE%B9/react19%E9%A1%B9%E7%9B%AE/verify-module/node_modules/storybook/dist/_node-chunks/chunk-7ATDBJYQ.js:15225:13)
+    at buildDevStandalone (file:///D:/E%E7%9B%98%E8%BD%AC%E7%A7%BB/.0000%E6%96%B0%E5%89%AA%E8%BE%91/%E5%89%AA%E8%BE%91%E5%B7%A5%E7%A8%8B/%E5%9C%A8%E5%AE%B6%E5%B7%A5%E4%BD%9C%E5%AD%A6%E4%B9%A0/react19%E5%86%85%E5%AE%B9/react19%E9%A1%B9%E7%9B%AE/verify-module/node_modules/storybook/dist/core-server/index.js:11911:28)
+    at async withTelemetry (file:///D:/E%E7%9B%98%E8%BD%AC%E7%A7%BB/.0000%E6%96%B0%E5%89%AA%E8%BE%91/%E5%89%AA%E8%BE%91%E5%B7%A5%E7%A8%8B/%E5%9C%A8%E5%AE%B6%E5%B7%A5%E4%BD%9C%E5%AD%A6%E4%B9%A0/react19%E5%86%85%E5%AE%B9/react19%E9%A1%B9%E7%9B%AE/verify-module/node_modules/storybook/dist/_node-chunks/chunk-BDBVBZK5.js:1785:12)
+    at async dev (file:///D:/E%E7%9B%98%E8%BD%AC%E7%A7%BB/.0000%E6%96%B0%E5%89%AA%E8%BE%91/%E5%89%AA%E8%BE%91%E5%B7%A5%E7%A8%8B/%E5%9C%A8%E5%AE%B6%E5%B7%A5%E4%BD%9C%E5%AD%A6%E4%B9%A0/react19%E5%86%85%E5%AE%B9/react19%E9%A1%B9%E7%9B%AE/verify-module/node_modules/storybook/dist/bin/core.js:3850:3)
+    at async _Command.<anonymous> (file:///D:/E%E7%9B%98%E8%BD%AC%E7%A7%BB/.0000%E6%96%B0%E5%89%AA%E8%BE%91/%E5%89%AA%E8%BE%91%E5%B7%A5%E7%A8%8B/%E5%9C%A8%E5%AE%B6%E5%B7%A5%E4%BD%9C%E5%AD%A6%E4%B9%A0/react19%E5%86%85%E5%AE%B9/react19%E9%A1%B9%E7%9B%AE/verify-module/node_modules/storybook/dist/bin/core.js:3958:3)
+[13:28:17.906] [WARN] Broken build, fix the error above.
+You may need to refresh the browser.
+[13:28:17.910] [INFO] Storybook collects completely anonymous usage telemetry. We use it to shape Storybook's roadmap and prioritize features. You can learn more, including how to opt out, at https://storybook.js.org/telemetry
