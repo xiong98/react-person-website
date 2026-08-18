@@ -3,9 +3,9 @@ import App from './App'
 
 const rootRoute = createRootRoute({
   component: () => (
-    <div className="min-h-screen bg-slate-950 text-slate-100">
+    // <div className="min-h-screen bg-slate-950 text-slate-100">
       <Outlet />
-    </div>
+    // </div>
   ),
 })
 
