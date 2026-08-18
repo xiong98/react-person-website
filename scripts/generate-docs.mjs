@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 /**
  * Project structure scanner / documentation generator.
  *
@@ -43,11 +43,15 @@ function toProjectPath(file) {
   return relative(ROOT, file).split(sep).join('/')
 }
 
+function stripComments(code) {
+  // 去掉 /* */ 与 // 行注释，避免把注释里的 import 误当成真实依赖
+  return code.replace(/\/\*[\s\S]*?\*\//g, '').replace(/(^|[^:/'"`])\/\/.*$/gm, '$1')
+}
 function extractImports(code) {
   const imports = new Set()
   const re = /import\s+(?:type\s+)?(?:\{[\s\S]*?\}|[^'"\n]+?)\s+from\s+['"]([^'"]+)['"]/g
   let m
-  while ((m = re.exec(code)) !== null) imports.add(m[1])
+  while ((m = re.exec(stripComments(code))) !== null) imports.add(m[1])
   return [...imports]
 }
 
@@ -55,7 +59,7 @@ function extractExportedNames(code) {
   const names = new Set()
   const re = /export\s+(?:default\s+)?(?:(?:async\s+)?function\s+(\w+)|const\s+(\w+)|type\s+(\w+))/g
   let m
-  while ((m = re.exec(code)) !== null) {
+  while ((m = re.exec(stripComments(code))) !== null) {
     m.slice(1)
       .filter(Boolean)
       .forEach((n) => names.add(n))

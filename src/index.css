@@ -1,6 +1,5 @@
 @import 'tailwindcss';
 
-
 /* tailwind响应式断点 */
 /* 下面是内置断点 */
 /* | 断点前缀 | 最小宽度 (px) | 最小宽度 (rem) | 典型设备 |
@@ -27,68 +26,66 @@
    🌞 浅色主题 (默认)
    ======================================== */
   /* 最底层的应用画布，是页面的基础背景色  class="bg-app"*/
-  --color-app: #F2F4F8;
+  --color-app: #f2f4f8;
   /* 侧边栏背景色，通常比主画布稍深或稍浅，形成视觉区分 class="bg-sidebar"*/
-  --color-sidebar: #EAECF0;
+  --color-sidebar: #eaecf0;
   /* “浮层”背景色，用于卡片、输入框、弹窗等需要从背景中凸起的元素 class="bg-surface"*/
-  --color-surface: #FFFFFF;
+  --color-surface: #ffffff;
   /* 用于二级或静默状态的背景，如表格的交替行、提示条等 class="bg-muted"*/
-  --color-muted: #E8EBEF;
+  --color-muted: #e8ebef;
   /* 鼠标悬停时的背景色，通常是一个带透明度的颜色 class="bg-hover"*/
   --color-hover: rgba(0, 0, 0, 0.04);
   /* 最重要的文本，如标题、关键数据，颜色最深 class="text-primary-text"*/
-  --color-primary-text: #1A1C1E;
+  --color-primary-text: #1a1c1e;
   /* 次要文本，如正文、描述性文字 class="text-secondary-text"*/
-  --color-secondary-text: #5B5F66;
-   /* 三级文本，用于占位符、提示信息等辅助内容 class="text-tertiary-text"*/
-  --color-tertiary-text: #8E929A;
+  --color-secondary-text: #5b5f66;
+  /* 三级文本，用于占位符、提示信息等辅助内容 class="text-tertiary-text"*/
+  --color-tertiary-text: #8e929a;
   /* 用于传达成功、警告、错误等状态信息的文本颜色 text-success / bg-success*/
-  --color-success: #1E8B5E;
-  --color-warning: #B47D2A;
-  --color-danger: #C93A3F;
+  --color-success: #1e8b5e;
+  --color-warning: #b47d2a;
+  --color-danger: #c93a3f;
   /* 品牌主色，常用于主要按钮、链接、选中状态等 bg-primary*/
-  --color-primary: #2B6ED7;
+  --color-primary: #2b6ed7;
   /* 置于品牌主色之上的文本或图标颜色，通常是白色，以确保可读性 text-primarytext*/
-  --color-primarytext: #FFFFFF;
+  --color-primarytext: #ffffff;
   /* 默认边框颜色 outline-border*/
-  --color-border: #DCE0E6;
+  --color-border: #dce0e6;
 }
-
 
 /* ========================================
    🌙 深色主题 (覆盖)
    ======================================== */
-[data-theme="dark"] {
+[data-theme='dark'] {
   /* ---- 背景色 ----
      使用深蓝灰代替纯黑，缓解OLED屏幕下纯黑导致的视觉残留 */
-  --color-app: #0C0D11;           /* 应用基底：极深蓝黑，比 #000 更自然 */
-  --color-sidebar: #15171D;       /* 侧边栏：比基底亮一个层级，体现立体感 */
-  --color-surface: #1D2027;       /* 卡片/浮层：明显亮于基底，作为前景突出 */
-  --color-muted: #262A33;         /* 静默背景：用于区分次级区域 */
+  --color-app: #0c0d11; /* 应用基底：极深蓝黑，比 #000 更自然 */
+  --color-sidebar: #15171d; /* 侧边栏：比基底亮一个层级，体现立体感 */
+  --color-surface: #1d2027; /* 卡片/浮层：明显亮于基底，作为前景突出 */
+  --color-muted: #262a33; /* 静默背景：用于区分次级区域 */
   --color-hover: rgba(255, 255, 255, 0.06); /* 悬停背景：极淡的白色透明 */
 
   /* ---- 文本色 ----
      使用柔和的乳白色，避免纯白(#FFF)与深色背景产生的眩光 */
-  --color-primary-text: #E8EAED;     /* 主文本：柔白，长时间阅读不累眼 */
-  --color-secondary-text: #A3A8B2;   /* 次要文本：暖灰，保证可读性的同时降低干扰 */
-  --color-tertiary-text: #6E737E;    /* 三级文本：深灰色，自然隐退 */
+  --color-primary-text: #e8eaed; /* 主文本：柔白，长时间阅读不累眼 */
+  --color-secondary-text: #a3a8b2; /* 次要文本：暖灰，保证可读性的同时降低干扰 */
+  --color-tertiary-text: #6e737e; /* 三级文本：深灰色，自然隐退 */
 
   /* ---- 功能色 ----
      在深色背景下适当提高明度，确保可读性 */
-  --color-success: #3DD68C;     /* 成功：亮薄荷绿，清晰且舒适 */
-  --color-warning: #F5B85A;     /* 警告：暖橘黄，醒目而不刺眼 */
-  --color-danger: #F16A6F;      /* 危险：柔珊瑚红，警示而不焦躁 */
+  --color-success: #3dd68c; /* 成功：亮薄荷绿，清晰且舒适 */
+  --color-warning: #f5b85a; /* 警告：暖橘黄，醒目而不刺眼 */
+  --color-danger: #f16a6f; /* 危险：柔珊瑚红，警示而不焦躁 */
 
   /* ---- 品牌色 ----
      在深色背景下提高亮度，维持视觉权重 */
-  --color-primary: #4A8AF4;          /* 主色：明快蓝，比浅色模式亮一级 */
-  --color-primarytext: #FFFFFF; /* 主色上的文字保持纯白 */
+  --color-primary: #4a8af4; /* 主色：明快蓝，比浅色模式亮一级 */
+  --color-primarytext: #ffffff; /* 主色上的文字保持纯白 */
 
   /* ---- 边框色 ----
      用比背景稍亮的灰色勾勒轮廓 */
-  --color-border: #2B2F38;           /* 默认边框：深灰，在深色背景中隐约可见 */
+  --color-border: #2b2f38; /* 默认边框：深灰，在深色背景中隐约可见 */
 }
-
 
 /* 自定义全局变体 */
 /* 等效与 html[data-pch5] &{ ... } */
@@ -103,28 +100,25 @@
 也失效且不会报错 */
 /* @custom-variant pch5 (&:where(initial, initial *)); */
 
-
-
 body {
   background-color: var(--color-primary);
-  background-image: url("./assets/circuit-board.svg");
-  width:100vw;
-  height:100vh;
-  overflow:auto;
+  background-image: url('./assets/circuit-board.svg');
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
 }
 #root {
   min-height: 100vh;
-  margin:auto;
+  margin: auto;
   background-color: var(--color-app);
 }
-
 
 /* 屏幕适配方案+h5显示模式切换 */
 /* 320px - 1024px
 1024px - 1920px */
 /* 750px 设计稿对应 1rem = 100px */
-html{
-  height:100vh;
+html {
+  height: 100vh;
   /* 750px 时斜率最大且为 100px，两端分别向 320px(约43px) 和 1920px(约180px) 平滑非线性过渡 */
   font-size: calc(100px * sqrt(100vw / 750px));
   /* &[data-pch5]{
@@ -134,17 +128,17 @@ html{
     }
   } */
   @variant pch5 {
-    font-size: calc((100px * sqrt(100vw / 750px))*0.8);
-    @media (0 <= width <= 1024px) { 
+    font-size: calc((100px * sqrt(100vw / 750px)) * 0.8);
+    @media (0 <= width <= 1024px) {
       font-size: calc(100px * sqrt(100vw / 750px));
     }
   }
-  #root{
+  #root {
     width: 100vw;
     max-width: 1920px;
-    min-width:1024px;
-    @media (0 <= width <= 1024px) { 
-      width:100vw;
+    min-width: 1024px;
+    @media (0 <= width <= 1024px) {
+      width: 100vw;
       min-width: 320px;
     }
   }
@@ -158,16 +152,14 @@ html{
     }
   } */
   @variant pch5 {
-    #root{
-      width:40vw;
+    #root {
+      width: 40vw;
       max-width: 1024px;
       min-width: 320px;
-      @media (0 <= width <= 1024px) { 
-      width:100vw;
-      min-width: 320px;
+      @media (0 <= width <= 1024px) {
+        width: 100vw;
+        min-width: 320px;
       }
     }
   }
 }
-
-

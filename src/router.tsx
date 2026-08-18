@@ -1,12 +1,8 @@
-import { createRootRoute, createRoute, createRouter, Outlet } from '@tanstack/react-router'
+﻿import { createRootRoute, createRoute, createRouter, Outlet } from '@tanstack/react-router'
 import App from './App'
 
 const rootRoute = createRootRoute({
-  component: () => (
-    // <div className="min-h-screen bg-slate-950 text-slate-100">
-      <Outlet />
-    // </div>
-  ),
+  component: () => <Outlet />,
 })
 
 const indexRoute = createRoute({

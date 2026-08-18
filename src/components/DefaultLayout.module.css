@@ -1,57 +1,57 @@
-  @reference "tailwindcss";
-  @reference "../index.css";
-  .default-layout {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
+@reference "tailwindcss";
+@reference "../index.css";
+.default-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
-  .default-layout__header {
-    font-size:0.2rem;
-    border-bottom: 1px solid #e5e7eb;
-  }
-  /* html[data-pch5] {
+.default-layout__header {
+  font-size: 0.2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+/* html[data-pch5] {
     .default-layout__header{
       background-color: bisque;
     }
   }   和下方的效果相同 */
-  .default-layout__header{ 
-    @variant pch5 {
-      background-color: bisque;
-    }
+.default-layout__header {
+  @variant pch5 {
+    background-color: bisque;
+  }
+}
+
+.default-layout__main {
+  flex: 1;
+  padding: 24px;
+  .laytout-title {
+    font-size: 0.18rem;
   }
 
-  .default-layout__main {
-    flex: 1;
-    padding: 24px;
-    .laytout-title{
-      font-size:0.18rem;
-    }
-
-    @variant md:max-lg {
-      background-color: antiquewhite;
-    }
-    /* html[data-pch5] & {
+  @variant md:max-lg {
+    background-color: antiquewhite;
+  }
+  /* html[data-pch5] & {
       @variant md:max-lg {
         background-color: cadetblue;
       }
     }    和下方的效果相同 */
-    @variant pch5 {
-      @variant md:max-lg {
-        background-color: cadetblue;
-      }
+  @variant pch5 {
+    @variant md:max-lg {
+      background-color: cadetblue;
     }
   }
-  .laytout-title{
+}
+.laytout-title {
+  @variant xs {
+    border: 1px solid purple;
+  }
+  @variant pch5 {
     @variant xs {
-      border: 1px solid purple;
-    }
-    @variant pch5 {
-      @variant xs {
-        border: 1px solid blue;
-      }
-    }
-    @variant pch5 {
-      background-color: blue;
+      border: 1px solid blue;
     }
   }
+  @variant pch5 {
+    background-color: blue;
+  }
+}
